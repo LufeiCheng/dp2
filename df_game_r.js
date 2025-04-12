@@ -10428,10 +10428,10 @@ function start() {
 	//change_random_option_inherit(); //魔法封印属性转换时可以继承(配合魔法封印改的装备镶嵌用)
 	//auto_unseal_random_option_equipment(); //魔法封印自动解封(配合魔法封印改的装备镶嵌用)
 	//enable_drop_use_luck_piont(); //使用角色幸运值加成装备爆率
-	//disable_check_create_character_limit(); //解除每日创建角色数量限制
+	disable_check_create_character_limit(); //解除每日创建角色数量限制
 	//setMaxCAccountCargoSolt(120);//金库扩容，设置账号金库格子数量，修改pvf可实现最多120，搜索金库扩容，角色离线处也有个开关！和跨界冲突！开了就别用跨界石。
 	//HookDsSwordman_SkillSlot();//黑暗武士技能拖动
-	//api_scheduleOnMainThread_delay(SendRandMsg, null, 30000);//定时公告
+	api_scheduleOnMainThread_delay(SendRandMsg, null, 30000);//定时公告
 	//api_scheduleOnMainThread_delay(startOnlineGifts, null, 1000);//6点删除剩余红包
 	//api_scheduleOnMainThread_delay(startOnlineGifts_new, null, 1000);  //处理在线玩家心悦等级相关
 	hook_history_log();//自动修理 装备播报 等等功能
